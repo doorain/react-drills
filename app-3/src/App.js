@@ -18,7 +18,7 @@ class App extends Component {
     let x = this.state.array.filter( (element, index) => {
       return element.includes( this.state.filteredList);
     }).map( (element, index) => {
-      return <h2>{ element }</h2>
+    return <h2 key={ index }>{ element }</h2>
 
     })
 
