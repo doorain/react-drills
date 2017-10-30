@@ -13,13 +13,13 @@ class App extends Component {
   render() {
     let x = this.state.array.map( (element, index) => {
       return (
-        <h2 key={ index }>{ element }</h2>
+        <h2>{ element }</h2>
       )
     })
 
     return (
       <div className="App">
-      
+
         {x}
       </div>
     );
